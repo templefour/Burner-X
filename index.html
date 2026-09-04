@@ -1526,7 +1526,7 @@
       (function() {
         function gateIfBackend() {
           try {
-            if (window.DEPLOYMENT_MODE === 'backend') {
+            if (false) {  <!-- 原本是 if (window.DEPLOYMENT_MODE === 'backend')-->
               var token = localStorage.getItem('auth_token');
               if (!token) {
                 // 允许 ?mode=frontend 显式绕过（用于演示/调试）
